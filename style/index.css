@@ -27,34 +27,62 @@ a {
 .header, .footer {
 	text-align: center;
 	color: white;
-	padding: 32px;
 	background-color: #555555;
 	background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23333333' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 @media (orientation: landscape) {
+	.header, .footer {
+		height: 10vh;
+	}
+
+	h1, h2 {
+		vertical-align: bottom;
+	}
+
 	.content {
 		display: grid;
 		grid-template: 'about resume projects';
-		height: 100%;
+	}
+
+	.content div {
+		height: 80vh;
+	}
+
+	.about {
+		width: 34vw;
+	}
+
+	.resume {
+		width: 33vw;
+	}
+
+	.projects {
+		width: 33vw;
 	}
 }
 
 @media (orientation: portrait) {
+	.header, .footer {
+		padding: 32px;
+	}
+
+	.about, .resume, .projects {
+		padding: 64px;
+	}
+
 	.content {
 		display: grid;
 		grid-template:
 			'about'
 			'resume'
 			'projects';
-		height: 100%;
 	}
 }
 
 .content div {
 	text-align: center;
 	color: white;
-	padding: 64px;
 }
 
 .about {
