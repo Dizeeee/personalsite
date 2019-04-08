@@ -1,0 +1,49 @@
+@font-face {
+    font-family: ComfortaaBold;
+    src: url(../fonts/Comfortaa-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+	font-family: ComfortaaBold, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    margin-top: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'pdf source'
+        'back back';
+}
+
+.pdf {
+    grid-area: pdf;
+}
+
+.pdf:hover {
+    background-color: #ccc
+}
+
+.source {
+    grid-area: source;
+}
+
+.source:hover {
+    background-color: #ccc
+}
+
+.back {
+    grid-area: back;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.back:hover {
+    background-color: #ccc
+}

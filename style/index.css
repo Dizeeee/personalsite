@@ -33,11 +33,14 @@ a {
 
 @media (orientation: landscape) {
 	.header, .footer {
+		line-height: 10vh;
 		height: 10vh;
 	}
 
 	h1, h2 {
-		vertical-align: bottom;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: normal;
 	}
 
 	.content {
@@ -47,6 +50,7 @@ a {
 
 	.content div {
 		height: 80vh;
+		line-height: 80vh;
 	}
 
 	.about {
@@ -54,11 +58,11 @@ a {
 	}
 
 	.resume {
-		width: 33vw;
+		width: 34vw;
 	}
 
 	.projects {
-		width: 33vw;
+		width: 34vw;
 	}
 }
 
