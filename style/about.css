@@ -10,21 +10,44 @@
 }
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
+	html {
+		background-color: #eee;
+	}
+
 	body {
-		background-color: red;
+		padding: 2vw;
+		background-color: #eee;
+	}
+
+	.body {
+		background-color: #eee;
 	}
 }
 
 @media screen and (orientation: landscape) and (min-width: 800px) {
-	body {
-		background-color: green;
+	.body {
+		width: 60vw;
+		margin: 0 20vw;
+		border-radius: 16px;
+		margin: 32px auto;
+		background-color: #ccc;
 	}
 }
 
 @media (orientation: portrait) {
-	body {
-		background-color: blue;
-	}
+		html {
+			background-color: #eee;
+		}
+	
+		body {
+			padding: 2vw;
+			background-color: #eee;
+		}
+	
+		.body {
+			background-color: #eee;
+		}
+	
 }
 
 body {
@@ -33,14 +56,33 @@ body {
 		'header'
 		'content'
 		'footer';
+		color: #111;
 }
 
 .body {
-
+	background-color: #eee;
+	padding: 2vw;
 }
 
 .header {
 	grid-area: header;
+	display: grid;
+	grid-template-areas: 'profile title';
+	grid-template-columns: 10vw auto;
+}
+
+.profile {
+	grid-area: profile;
+	border-radius: 100%;
+	width: 10vw;
+	min-width: 100px;
+}
+
+.title {
+	grid-area: title;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 10vw;
 }
 
 .content {
@@ -49,4 +91,6 @@ body {
 
 .footer {
 	grid-area: footer;
+	text-align: center;
+	color: #aaa;
 }

@@ -66,7 +66,7 @@ a {
 	}
 }
 
-@media (orientation: portrait) {
+@media (orientation: portrait) and (max-height: 650px) {
 	.header, .footer {
 		padding: 32px;
 	}
@@ -81,6 +81,31 @@ a {
 			'about'
 			'resume'
 			'projects';
+	}
+}
+
+@media (orientation: portrait) and (min-height: 650px) {
+	.header, .footer {
+		line-height: 11vh;
+		height: 11vh;
+	}
+
+	h1, h2 {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: normal;
+	}
+
+	.content {
+		display: grid;
+		grid-template:	'about'
+						'resume'
+						'projects';
+	}
+
+	.content div {
+		height: 26vh;
+		line-height: 26vh;
 	}
 }
 
