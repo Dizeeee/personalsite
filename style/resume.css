@@ -1,49 +1,86 @@
 @font-face {
-    font-family: ComfortaaBold;
-    src: url(../fonts/Comfortaa-Bold.ttf);
+	font-family: ComfortaaBold;
+	src: url(../fonts/Comfortaa-Bold.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	font-family: ComfortaaBold, sans-serif;
+	color: #222;
+	font-size: 24px;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(320deg, #50eb67, #28dac1, #32a2dc, #b861e3);
+	animation: backgroundGrad 15s ease infinite;
+	display: flex;
+	background-size: 200% 200%;
+}
+
+@keyframes backgroundGrad { 
+    0%		{background-position:0% 50%}
+    50%		{background-position:100% 50%}
+    100%	{background-position:0% 50%}
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
+	color: #222;
+	padding: 32px;
 }
 
-.content {
-    margin-top: auto;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas:
-        'pdf source'
-        'back back';
+a:active {
+	padding: 32px;
+}
+
+.title {
+	grid-area: title;
+	padding: 32px;
 }
 
 .pdf {
-    grid-area: pdf;
+	grid-area: pdf;
 }
 
 .pdf:hover {
-    background-color: #ccc
+	background-color: #ddd;
 }
 
 .source {
-    grid-area: source;
+	grid-area: source;
 }
 
 .source:hover {
-    background-color: #ccc
+	background-color: #ddd;
 }
 
 .back {
-    grid-area: back;
-    grid-row: 1 / 2;
-    text-align: center;
+	grid-area: back;
 }
 
 .back:hover {
-    background-color: #ccc
+	background-color: #ddd;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		'title title'
+		'pdf source'
+		'back back';
+	grid-gap: 8px;
+	padding: 8px;
+	border-radius: 16px;
+	width: 300px;
+	margin: auto;
+	background-color: #ccc;
+}
+
+.grid-container > div {
+	text-align: center;
+	border-radius: 16px;
+	background-color: #eee;
+	padding: 32px 0;
 }
