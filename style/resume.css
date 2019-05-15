@@ -76,6 +76,7 @@ a:active {
 	width: 300px;
 	margin: auto;
 	background-color: #ccc;
+	box-shadow: 0 0 16px #888;
 }
 
 .grid-container > div {
