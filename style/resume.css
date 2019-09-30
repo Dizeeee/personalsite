@@ -14,7 +14,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background: linear-gradient(320deg, #50eb67, #28dac1, #32a2dc, #b861e3);
-	animation: backgroundGrad 15s ease infinite;
+	animation: backgroundGrad 12s ease infinite;
 	display: flex;
 	background-size: 200% 200%;
 }
