@@ -11,7 +11,7 @@
 
 img {
 	width: 20vh;
-	border-radius: 100%;
+	border-radius: 30%;
 }
 
 @media screen and (min-width: 800px) {
@@ -27,21 +27,47 @@ img {
 	.header h1 {
 		padding: 32px;
 	}
+
+	.links img {
+		width: 32px;
+		height: 32px;
+	}
+
+	.fa {
+		font-size: 32px;
+	}
+
 }
 
 @media screen and (orientation: portrait) {
-	.body {
-		/* width: 100vw; */
+	.content {
+		padding: 16px;
+	}
+
+	.links img {
+		width: 8vw;
+		height: 8vw;
+	}
+
+	.fa {
+		font-size: 8vw;
 	}
 }
 
 body {
-	background-color: #222;
+	background-color: #111;
 }
 
 a {
 	color: #ddd;
+}
+
+.back a {
 	text-decoration: none;
+}
+
+a:hover {
+	color: #aaa;
 }
 
 .back {
@@ -49,9 +75,6 @@ a {
 	padding: 16px;
 	top: 8px;
 	left: 0;
-	background-color: #444;
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
 }
 
 .body {
@@ -60,7 +83,7 @@ a {
 		'header'
 		'content'
 		'footer';
-	background-color: #444;
+	background-color: #111;
 	line-height: 22px;
 }
 
@@ -68,17 +91,25 @@ a {
 	grid-area: header;
 	text-align: center;
 	color: #eee;
+	margin: 32px;
 }
 
 .content {
 	grid-area: content;
 	color: #eee;
+	margin: 16px;
 }
 
-.footer {
-	grid-area: footer;
-	text-align: center;
-	color: #bbb;
-	font-size: 12px;
-	padding-top: 16px;
+.content p {
+	margin-bottom: 16px;
+}
+
+.links {
+	margin: auto;
+	display: flex;
+}
+
+.links a {
+	text-decoration: none;
+	margin: 16px;
 }

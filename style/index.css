@@ -22,6 +22,11 @@ body {
 
 a {
 	text-decoration: none;
+	color: white;
+}
+
+.footer a:hover {
+	color: #bbb;
 }
 
 .header, .footer {
@@ -129,7 +134,7 @@ a {
 
 
 .resume {
-	background: linear-gradient(60deg, #d77, #fb7);
+	background: linear-gradient(60deg, #d66, #fb7);
 }
 
 .resume h1 {
@@ -142,7 +147,7 @@ a {
 
 
 .projects {
-	background: linear-gradient(60deg, #8d2, #dd0);
+	background: linear-gradient(60deg, #4b1, #bc5);
 }
 
 .projects h1 {
